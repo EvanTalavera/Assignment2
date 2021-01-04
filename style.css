@@ -1,0 +1,24 @@
+
+body{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+h1{
+    align-self: flex-start;
+}
