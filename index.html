@@ -23,7 +23,7 @@
             <option value="Amber">Amber</option>
             <option value="Barbara">Barbara</option>
             <option value="Beidou">Beidou</option>
-            <option value="Bennet">Bennet</option>
+            <option value="Bennett">Bennett</option>
             <option value="Chongyun">Chongyun</option>
             <option value="Fischl">Fischl</option>
             <option value="Kaeya">Kaeya</option>
@@ -51,6 +51,10 @@
 
         </select>
         </div>  
+        <div id = "base_stats_container">
+            <p>Base stats:</p>
+            <p id = "base_stats">ATK: ,DEF: ,HP:</p>
+        </div>
 
         <div id = "artifact_options">
 
@@ -58,7 +62,7 @@
 
                 <p>Flower of Life</p>
 
-                <select id = "fol_rarity_select" name = "fol_rarity_select">
+                <select id = "fol_rarity_select" onchange="folChoice()">
                     <option value="">Rarity</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
@@ -71,7 +75,7 @@
 
                 <p>Plume of Death</p>
 
-                <select id = "pod_rarity_select" name = "pod_rarity_select">
+                <select id = "pod_rarity_select" onchange="podChoice()">
                     <option value="">Rarity</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
@@ -83,13 +87,13 @@
 
                 <p>Sands of Eon</p>
 
-                <select id = "soe_rarity_select" name = "soe_rarity_select">
+                <select id = "soe_rarity_select" onchange="soeChoice()">
                     <option value="">Rarity</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
 
-                <select id="soe_mainstat_select" name = "soe_mainstat_select">
+                <select id="soe_mainstat_select" onchange="soeChoice()">
                     <option value="">Main Stat</option>
                     <option value="HP">HP%</option>
                     <option value="DEF">DEF%</option>
@@ -102,13 +106,13 @@
 
                 <p>Goblet of Eonothem</p>
 
-                <select id = "goe_rarity_select" name = "goe_rarity_select">
+                <select id = "goe_rarity_select" onchange="goeChoice()">
                     <option value="">Rarity</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
 
-                <select id="goe_mainstat_select" name = "goe_mainstat_select">
+                <select id="goe_mainstat_select" onchange="goeChoice()">
                     <option value="">Main Stat</option>
                     <option value="HP">HP%</option>
                     <option value="DEF">DEF%</option>
@@ -121,13 +125,13 @@
 
                 <p>Circlet of Logos</p>
 
-                <select id = "col_rarity_select" name = "col_rarity_select">
+                <select id = "col_rarity_select" onchange="colChoice()">
                     <option value="">Rarity</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
 
-                <select id="col_mainstat_select" name = "col_mainstat_select">
+                <select id="col_mainstat_select" onchange="colChoice()">
                     <option value="">Main Stat</option>
                     <option value="HP">HP%</option>
                     <option value="DEF">DEF%</option>
@@ -136,8 +140,15 @@
                 
             </div>
 
+            
+
         </div>
-        <p id="test">No Character Chosen</p>
+        <div id="final_stats_container">
+            <p>Final stats</p>
+            <p id="final_stats">ATK: ,DEF: ,HP:</p>
+        </div>
+
+        
     </div>
 
 </body>
