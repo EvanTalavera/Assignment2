@@ -15,9 +15,137 @@
 <body>
     <div class="container-box">
         <h1>Genshin Impact Calculator</h1>
-        <ul id="Character">
 
-        </ul>
+        <div id = "character_options">
+         <p>Select Character</p>
+         <select id="character_select" name="character_select">
+            <option value=""></option>
+            <option value="Barbara">Barbara</option>
+            <option value="Beidou">Beidou</option>
+            <option value="Bennet">Bennet</option>
+            <option value="Chongyun">Chongyun</option>
+            <option value="Fischl">Fischl</option>
+            <option value="Kaeya">Kaeya</option>
+            <option value="Lisa">Lisa</option>
+            <option value="Ningguang">Ningguang</option>
+            <option value="Noelle">Noelle</option>
+            <option value="Razor">Razor</option>
+            <option value="Sucrose">Sucrose</option>
+            <option value="Xiangling">Xiangling</option>
+            <option value="Xingqiu"></option>
+
+         </select>
+
+        <p>Character Level</p>
+        <select id = "level_select" name="level_select">
+                <option value=""></option>
+                <option value=20>20</option>
+                <option value=40>40</option>
+                <option value=50>50</option>
+                <option value=60>60</option>
+                <option value=70>70</option>
+                <option value=80>80</option>
+                <option value=90>90</option>
+
+
+        </select>
+        </div>  
+
+        <div id = "artifact_options">
+
+            <div id="FoL">
+
+                <p>Flower of Life</p>
+
+                <select id = "fol_rarity_select" name = "fol_rarity_select">
+                    <option value="">Rarity</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+
+            </div>
+
+
+            <div id = "PoD">
+
+                <p>Plume of Death</p>
+
+                <select id = "pod_rarity_select" name = "pod_rarity_select">
+                    <option value="">Rarity</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+
+            </div>
+
+            <div id = "SoE">
+
+                <p>Sands of Eon</p>
+
+                <select id = "soe_rarity_select" name = "soe_rarity_select">
+                    <option value="">Rarity</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+
+                <select id="soe_mainstat_select" name = "soe_mainstat_select">
+                    <option value="">Main Stat</option>
+                    <option value="HP">HP%</option>
+                    <option value="DEF">DEF%</option>
+                    <option value="ATK">ATK%</option>
+                </select>
+
+            </div>
+
+            <div id = "GoE">
+
+                <p>Goblet of Eonothem</p>
+
+                <select id = "goe_rarity_select" name = "goe_rarity_select">
+                    <option value="">Rarity</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+
+                <select id="goe_mainstat_select" name = "goe_mainstat_select">
+                    <option value="">Main Stat</option>
+                    <option value="HP">HP%</option>
+                    <option value="DEF">DEF%</option>
+                    <option value="ATK">ATK%</option>
+                </select>
+                
+            </div>
+
+            <div id = "CoL">
+
+                <p>Circlet of Logos</p>
+
+                <select id = "col_rarity_select" name = "col_rarity_select">
+                    <option value="">Rarity</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+
+                <select id="col_mainstat_select" name = "col_mainstat_select">
+                    <option value="">Main Stat</option>
+                    <option value="HP">HP%</option>
+                    <option value="DEF">DEF%</option>
+                    <option value="ATK">ATK%</option>
+                </select>
+                
+            </div>
+
+        </div>
     </div>
 
 </body>

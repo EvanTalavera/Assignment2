@@ -6,8 +6,7 @@ body{
 
 .container-box{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     position: absolute;
 	top: 50%;
 	left: 50%;
@@ -15,10 +14,25 @@ body{
 	width: 800px;
 	height: 400px;
     background: rgba(0, 0, 0, 0.5);
+    padding: 1%;
     font-family: 'Noto Sans JP', sans-serif;
     color: white;
 }
 
 h1{
     align-self: flex-start;
+    justify-self: center;
+}
+
+#character_options{
+    display: flex;
+
+
+
+}
+
+#artifact_options{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
 }

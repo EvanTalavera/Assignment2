@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
 
     var $Character = $("#Character");
 
@@ -12,4 +12,4 @@ $(function(){
             
         }
     })
-})
+})*/
