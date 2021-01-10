@@ -39,6 +39,31 @@ var finalHP = 0;
 var finalATK = 0;
 var finalDEF = 0;
 
+
+
+
+
+const api_url = "https://genshinlist.com/api/characters"
+
+ async function getCharacters(){
+        const response = await fetch(api_url);
+        const data = await response.json();
+        console.log(data);
+        console.log(data.length)
+        console.log(data[0].description)
+        x = data[0].description
+        console.log(x)
+    }
+
+getCharacters()
+
+
+
+
+
+
+
+
 function characterChoice(){
     charaChoice = $("#character_select").val();
 };
@@ -743,4 +768,3 @@ function colChoice(){
     colUpdate()
     finalModifiers()
 };
-
