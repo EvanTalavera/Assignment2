@@ -18,8 +18,9 @@
 
         <div id = "character_options">
          <p>Select Character</p>
-         <select id="character_select" name="character_select">
+         <select id="character_select" onchange="characterChoice()">
             <option value=""></option>
+            <option value="Amber">Amber</option>
             <option value="Barbara">Barbara</option>
             <option value="Beidou">Beidou</option>
             <option value="Bennet">Bennet</option>
@@ -32,12 +33,12 @@
             <option value="Razor">Razor</option>
             <option value="Sucrose">Sucrose</option>
             <option value="Xiangling">Xiangling</option>
-            <option value="Xingqiu"></option>
+            <option value="Xingqiu">Xingqiu</option>
 
          </select>
 
         <p>Character Level</p>
-        <select id = "level_select" name="level_select">
+        <select id = "level_select" onchange="levelChoice()">
                 <option value=""></option>
                 <option value=20>20</option>
                 <option value=40>40</option>
@@ -59,8 +60,6 @@
 
                 <select id = "fol_rarity_select" name = "fol_rarity_select">
                     <option value="">Rarity</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
@@ -74,8 +73,6 @@
 
                 <select id = "pod_rarity_select" name = "pod_rarity_select">
                     <option value="">Rarity</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
@@ -88,8 +85,6 @@
 
                 <select id = "soe_rarity_select" name = "soe_rarity_select">
                     <option value="">Rarity</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
@@ -109,8 +104,6 @@
 
                 <select id = "goe_rarity_select" name = "goe_rarity_select">
                     <option value="">Rarity</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
@@ -130,8 +123,6 @@
 
                 <select id = "col_rarity_select" name = "col_rarity_select">
                     <option value="">Rarity</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
                     <option value=4>4</option>
                     <option value=5>5</option>
                 </select>
@@ -146,6 +137,7 @@
             </div>
 
         </div>
+        <p id="test">No Character Chosen</p>
     </div>
 
 </body>
