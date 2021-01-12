@@ -1,3 +1,5 @@
+Github page link: https://evantalavera.github.io/Assignment2/
+
 # Genshin Impact Calculator
 
 This project is meant to be an online calculator targetted towards Genshin Impact players who are looking to calculate the various stats of the characters when equipped with different items
